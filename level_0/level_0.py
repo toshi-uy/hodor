@@ -2,7 +2,6 @@
 """Python script to cheat on website"""
 
 
-import re
 import mechanize
 
 for i in range(1024):
