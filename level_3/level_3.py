@@ -2,7 +2,9 @@
 """Python script to cheat on website"""
 
 from http import cookiejar
+import re
 import mechanize
+import urllib
 import http.cookiejar as cookiejar
 
 br = mechanize.Browser()
