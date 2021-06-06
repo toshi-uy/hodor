@@ -47,7 +47,7 @@ except:
 try:
         image_file = io.BytesIO(page)
         image = Image.open(image_file).convert('RGB')
-        file_path = os.path.join("./level_3/captchas",hashlib.sha1(page).hexdigest()[:10] + '.jpg')
+        file_path = os.path.join("level_3/captchas",hashlib.sha1(page).hexdigest()[:10] + '.jpg')
         with open(file_path, 'wb') as f:
             image.save(f, "JPEG", quality=85)
         print(f"SUCCESS - saved {URL} - as {file_path}")
